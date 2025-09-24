@@ -1,0 +1,113 @@
+body {
+            background-image: url('/Front/images/assets/bg1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav a{
+  font-size: 1.3em;
+  margin: 0 1em;
+  border-radius: 20px;
+  color: var(--text-color);
+}
+
+.nav a:hover{
+  background-color: var(--text-color);
+  color: var(--main-color);
+}
+
+
+#logoPage {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 30%;
+}
+
+#btn1:hover, #btn2:hover{
+    transform: scale(1.2);
+}
+
+.head-text{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.dark-mode {
+    --main-color: #121212;
+    --second-color: #333333;
+    --back-color: #1f1f1f;
+    --text-color: #f9f9f9;
+}
+
+.dark-mode html, .dark-mode body {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.dark-mode .nav a {
+    color: var(--text-color);
+}
+
+.dark-mode .nav a:hover {
+    background-color: var(--text-color);
+    color: var(--main-color);
+}
+
+.dark-mode .aside-ticket,
+.dark-mode .order,
+.dark-mode .product {
+    background-color: var(--second-color);
+    color: var(--text-color);
+}
+
+.dark-mode .product-box {
+    background: linear-gradient(to bottom right, #2a2a2a, #1e1e1e);
+    color: var(--text-color);
+}
+
+.dark-mode .product-image-wrapper {
+    border-color: #aaa;
+}
+
+.dark-mode .btn {
+    color: #fff;
+}
+
+.dark-mode .btn-outline-success,
+.dark-mode .btn-outline-danger {
+    border-color: #ccc;
+}
+
+.dark-mode .btn-outline-success:hover,
+.dark-mode .btn-outline-danger:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.dark-mode .custom-select {
+    background-color: #222;
+    color: #f5f5f5;
+    border: 1px solid #555;
+}
+
+.dark-mode .custom-select option {
+    background-color: #222;
+    color: #f5f5f5;
+}
+
+
+.dark-mode body {
+    background-color: #121212 !important;
+    background-image: none !important;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #1a1a1a !important;
+}
