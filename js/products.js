@@ -2,7 +2,7 @@
 // VARIABLES GLOBALES
 // ==============================
 
-import { PRODUCTOS, API_BASE  } from "./constantes/rutas.js";
+import { PRODUCTOS, API_BASE  } from "../constantes/rutas.js";
 
 const tipoSelect    = document.querySelector('select[name="type"]');
 const marcaSelect   = document.querySelector('select[name="brands"]');
@@ -74,7 +74,7 @@ const writeProducto = (producto) => {
          style="height: 100%; max-height: 340px; overflow: hidden; position: relative;">
       
       <!-- Botón Ver más detalles -->
-      <a href="/Front/client/html/detalleProducto.html?idProducto=${id}" 
+      <a href="/detalleProducto.html?idProducto=${id}" 
          class="btn btn-sm btn-primary position-absolute top-0 end-0 m-2">
         Ver más
       </a>
@@ -285,6 +285,7 @@ async function init() {
   } catch (err) {
     console.error("Error al cargar productos:", err);
   }
+  console.log(allProducts)
 }
 
 init();

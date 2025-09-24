@@ -1,4 +1,4 @@
-import { CLIENTES } from "./constantes/rutas.js";
+import {CLIENTES} from "../constantes/rutas.js";
 
 const buttonLogin = document.querySelector('.btn-login');
 const nombreUsuario = document.getElementById('nombre');
@@ -6,7 +6,7 @@ const nombreUsuario = document.getElementById('nombre');
 buttonLogin.addEventListener('click', async (e) => {
     e.preventDefault();
     const nombre = nombreUsuario.value;
-
+    console.log(CLIENTES)
     if (!nombre) {
         alert('Por favor, complete todos los campos.');
         return;

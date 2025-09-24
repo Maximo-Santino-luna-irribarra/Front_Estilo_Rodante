@@ -1,4 +1,4 @@
-import { PRODUCTOS, API_BASE } from "./constantes/rutas.js";
+import { PRODUCTOS, API_BASE } from "../constantes/rutas.js";
 
 let carrito = cargarCarrito();
 

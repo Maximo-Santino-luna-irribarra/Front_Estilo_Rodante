@@ -1,4 +1,4 @@
-import { API_BASE } from "./constantes/rutas.js";
+import { API_BASE } from "../constantes/rutas.js";
 
 const box = document.querySelector(".box")
 const listaProductos = []
